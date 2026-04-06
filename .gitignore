@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# HubSpot CLI (Legacy local configs - just in case)
+hubspot.config.yml
+
+# Environment secrets
+.env
