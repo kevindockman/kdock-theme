@@ -15,5 +15,8 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@hubspot/cli": "^8.3.0"
   }
 }
