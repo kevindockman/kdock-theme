@@ -1,0 +1,44 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Base Layout
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_meta.name }}</title>
+  <meta name="description" content="{{ page_meta.meta_description }}">
+
+  {# Required by HubSpot #}
+  {{ standard_header_includes }}
+
+  {# Links Kevin's global CSS #}
+  {{ require_css(get_asset_url("../styles/styles.css")) }}
+</head>
+
+<body>
+
+  <header>
+    <!-- Global header goes here -->
+    <h2>Header Placeholder</h2>
+  </header>
+
+  <main class="body-wrapper">
+    {# The injection zone for individual page content #}
+    {% block body %}
+    {% endblock body %}
+  </main>
+
+  <footer>
+    <!-- Global footer goes here -->
+    <p>Footer Placeholder</p>
+  </footer>
+
+  {# Required by HubSpot #}
+  {{ standard_footer_includes }}
+</body>
+
+</html>
